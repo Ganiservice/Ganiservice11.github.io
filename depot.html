@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dépôt Mobile Money — Gani Service</title>
+<meta name="description" content="Dépose de l’argent Orange Money ou Moov Money sur ton compte 1xBet, BetWinner ou MelBet.">
+<meta name="theme-color" content="#0E2A22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Gani Service, accueil"><i>G</i>Gani Service</a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="depot.html" aria-current="page">Dépôt</a>
+      <a href="retrait.html">Retrait</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="wrap">
+  <div class="page-titre"><h1>Faire un dépôt</h1><p class="sous">Du Mobile Money vers ton compte de paris.</p></div>
+  <div class="corps">
+    <form class="form" data-op="dépôt">
+      <h2>Ta demande de dépôt</h2>
+      <p class="aide">Ta demande s’ouvre dans WhatsApp, prête à envoyer.</p>
+      <div class="champ"><label for="p">Plateforme</label><select id="p" data-label="Plateforme"><option>1xBet</option><option>BetWinner</option><option>MelBet</option></select></div>
+      <div class="champ"><label for="r">Réseau Mobile Money</label><select id="r" data-label="Réseau"><option>Orange Money</option><option>Moov Money</option></select></div>
+      <div class="champ"><label for="m">Montant (FCFA)</label><input id="m" type="number" min="500" step="100" inputmode="numeric" placeholder="Ex. 5000" required data-label="Montant (FCFA)"></div>
+      <div class="champ"><label for="i">Ton ID de compte</label><input id="i" type="text" inputmode="numeric" placeholder="Ex. 123456789" required data-label="ID de compte"></div>
+      <button class="btn" type="submit">Envoyer sur WhatsApp</button>
+      <p class="note">Ne partage jamais ton mot de passe.</p>
+    </form>
+    <div class="conseils">
+      <h2>Avant de commencer</h2>
+      <ul>
+        <li>Prépare ton ID de compte sur la plateforme.</li>
+        <li>Vérifie que ton solde Mobile Money couvre le montant.</li>
+        <li>Attends notre confirmation avant d’envoyer l’argent.</li>
+        <li>Le dépôt arrive en quelques minutes.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <p>© 2026 Gani Service. Réservé aux personnes de 18 ans et plus.</p>
+    <p>Les paris comportent des risques : joue avec modération et ne mise que ce que tu peux te permettre de perdre.</p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
